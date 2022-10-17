@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+   <link rel="icon" href="Media/email.ico">
+
+    <title>Formulario</title>
+
+</head>
+
+<body>
+    <h1>Contáctanos</h1>
+    <form name="datos" action="" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre: </label>
+            <input type="text" class="field" id="nombre" name="nombre">
+
+            <label for="apellido">Apellido: </label>
+            <input type="text" class="field" id="apellido" name="apellido">
+
+            <label for="correo">Ingrese su e-mail: </label>
+            <input type="email" class="field" id="email" name="email">
+            <br><br>
+            <label for="fechanac">Fecha de Nacimiento</label>
+            <input type="date" class="field">
+        </fieldset>
+        <br><br>
+        <label for="comentarios">Dejanos tus comentarios</label>
+        <br>
+        <textarea cols="30" rows="10" class="field" id="comentario" name="comentario"
+            placeholder="Escriba aqui..."></textarea>
+        <br>
+        <input type="reset" class="btn btn-green" value="Borrar">
+        <input type="submit" onclick="return validarDatos()" class="btn btn-green" value="Enviar">
+        <br><br>
+
+       <!--  /*esto lo dejo comentado porque no sé si dejarlo en el formulario de contacto o solamente en subi tu música*/
+       <!--  <p>¿Querés enviarnos un archivo con tu música?
+            Adjuntálo acá:
+        </p>
+        <input type="file" class="btn btn-green" id="adjunto" name="adjunto">
+        <input type="submit" class="btn btn-green" value="Subir"> -->
+    </form>
+    <div id="error"></div>
+
+    <script type="text/javascript" src="validar.js"></script>
+</body>
+
+</html>
+</body>
+
+</html>
